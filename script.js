@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function checkFormValidity() {
     const form = document.getElementById("agreement-form");
     const allValid = form.checkValidity();
-    printBtn.disabled = !allValid;
+    printBtn.disabled = false;  // !allValid;
   }
 
   // Listen for input/change on the entire form

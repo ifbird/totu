@@ -32,15 +32,27 @@ body {
 
 /* Header */
 header {
-  position: relative;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 3px solid var(--primary);
 }
 
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo {
+  max-height: 90px;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
 header h1 {
   font-size: 1.75rem;
   color: var(--primary-dark);
+  flex: 1;
 }
 
 header .subtitle {
@@ -50,9 +62,6 @@ header .subtitle {
 }
 
 .lang-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
   background: var(--primary);
   color: #fff;
   border: none;
@@ -62,6 +71,8 @@ header .subtitle {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .lang-btn:hover {
@@ -262,6 +273,7 @@ header .subtitle {
     font-size: 11pt;
   }
 
+
   .container {
     max-width: 100%;
     padding: 0;
@@ -283,7 +295,6 @@ header .subtitle {
     border: none;
     padding: 0.5rem 0;
     margin-bottom: 0.75rem;
-    page-break-inside: avoid;
   }
 
   .form-section h2 {
@@ -329,9 +340,8 @@ header .subtitle {
     margin-top: auto;
   }
 
-  /* Page break before coordinating academic section */
   .page-break-before {
-    page-break-before: always;
+    page-break-before: auto;
   }
 
   .checkbox-label input[type="checkbox"] {
