@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.querySelector(".sup-surname").required = enabled;
     container.querySelector(".sup-firstname").required = enabled;
     container.querySelector(".sup-title").required = enabled;
+    container.querySelector(".sup-date").required = enabled;
   }
 
   function clearSupervisorFields(container) {
@@ -86,6 +87,21 @@ document.addEventListener("DOMContentLoaded", () => {
       el.selectedIndex = 0;
     });
   }
+
+  // Validation: enable print button only when all required fields are filled
+  function checkFormValidity() {
+    const form = document.getElementById("agreement-form");
+    const allValid = form.checkValidity();
+    printBtn.disabled = !allValid;
+  }
+
+  // Listen for input/change on the entire form
+  const form = document.getElementById("agreement-form");
+  form.addEventListener("input", checkFormValidity);
+  form.addEventListener("change", checkFormValidity);
+
+  // Run once on load
+  checkFormValidity();
 
   // Print
   printBtn.addEventListener("click", () => {

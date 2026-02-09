@@ -10,7 +10,7 @@
   <div class="container">
     <header>
       <h1>
-        <span data-lang-en>SUPERVISOR AGREEMENT 111</span>
+        <span data-lang-en>SUPERVISOR AGREEMENT</span>
         <span data-lang-fi hidden>OHJAAJASOPIMUS</span>
       </h1>
       <p class="subtitle">
@@ -97,8 +97,9 @@
             <label for="applicant-email">
               <span data-lang-en>Email address</span>
               <span data-lang-fi hidden>Sähköpostiosoite</span>
+              <span class="required-star">*</span>
             </label>
-            <input type="email" id="applicant-email" data-placeholder-en="Email address" data-placeholder-fi="Sähköpostiosoite" placeholder="Email address">
+            <input type="email" id="applicant-email" required data-placeholder-en="Email address" data-placeholder-fi="Sähköpostiosoite" placeholder="Email address">
           </div>
         </div>
       </section>
@@ -159,8 +160,9 @@
               <label>
                 <span data-lang-en>Date (dd/mm/yyyy)</span>
                 <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+                <span class="required-star">*</span>
               </label>
-              <input type="date" class="sup-date">
+              <input type="date" class="sup-date" required>
             </div>
             <div class="form-group">
               <label>
@@ -247,6 +249,7 @@
                 <label>
                   <span data-lang-en>Date (dd/mm/yyyy)</span>
                   <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+                  <span class="required-star">*</span>
                 </label>
                 <input type="date" class="sup-date">
               </div>
@@ -310,6 +313,7 @@
                 <label>
                   <span data-lang-en>Date (dd/mm/yyyy)</span>
                   <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+                  <span class="required-star">*</span>
                 </label>
                 <input type="date" class="sup-date">
               </div>
@@ -342,15 +346,17 @@
             <label for="coord-surname">
               <span data-lang-en>Surname/Last name</span>
               <span data-lang-fi hidden>Sukunimi</span>
+              <span class="required-star">*</span>
             </label>
-            <input type="text" id="coord-surname" data-placeholder-en="Surname/Last name" data-placeholder-fi="Sukunimi" placeholder="Surname/Last name">
+            <input type="text" id="coord-surname" required data-placeholder-en="Surname/Last name" data-placeholder-fi="Sukunimi" placeholder="Surname/Last name">
           </div>
           <div class="form-group">
             <label for="coord-firstname">
               <span data-lang-en>First name(s)</span>
               <span data-lang-fi hidden>Etunimi/Etunimet</span>
+              <span class="required-star">*</span>
             </label>
-            <input type="text" id="coord-firstname" data-placeholder-en="First name(s)" data-placeholder-fi="Etunimi/Etunimet" placeholder="First name(s)">
+            <input type="text" id="coord-firstname" required data-placeholder-en="First name(s)" data-placeholder-fi="Etunimi/Etunimet" placeholder="First name(s)">
           </div>
         </div>
 
@@ -358,8 +364,9 @@
           <label for="coord-title">
             <span data-lang-en>Academic degree title (Prof./Assoc prof./Docent)</span>
             <span data-lang-fi hidden>Akateeminen arvo (Prof./Apul. prof./Dosentti)</span>
+            <span class="required-star">*</span>
           </label>
-          <select id="coord-title">
+          <select id="coord-title" required>
             <option value="" data-en="-- Select title --" data-fi="-- Valitse arvo --">-- Select title --</option>
             <option value="prof" data-en="Prof." data-fi="Prof.">Prof.</option>
             <option value="assoc-prof" data-en="Assoc prof." data-fi="Apul. prof.">Assoc prof.</option>
@@ -372,8 +379,9 @@
             <label for="coord-date">
               <span data-lang-en>Date (dd/mm/yyyy)</span>
               <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+              <span class="required-star">*</span>
             </label>
-            <input type="date" id="coord-date">
+            <input type="date" id="coord-date" required>
           </div>
           <div class="form-group">
             <label>
@@ -387,7 +395,7 @@
 
       <!-- Actions -->
       <section class="form-actions no-print">
-        <button type="button" id="print-btn" class="btn btn-primary">
+        <button type="button" id="print-btn" class="btn btn-primary" disabled>
           <span data-lang-en>Print / Save as PDF</span>
           <span data-lang-fi hidden>Tulosta / Tallenna PDF</span>
         </button>
