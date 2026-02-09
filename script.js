@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   let currentLang = "en";
 
-  const langToggle = document.getElementById("lang-toggle");
+  const langEnBtn = document.getElementById("lang-en");
+  const langFiBtn = document.getElementById("lang-fi");
   const printBtn = document.getElementById("print-btn");
   const programmeSelect = document.getElementById("doctoral-programme");
   const fundingBlock = document.getElementById("funding-block");
@@ -10,13 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const sup2Fields = document.getElementById("supervisor2-fields");
   const sup3Fields = document.getElementById("supervisor3-fields");
 
-  // Language toggle
-  langToggle.addEventListener("click", () => {
-    currentLang = currentLang === "en" ? "fi" : "en";
-    langToggle.textContent = currentLang === "en" ? "FI" : "EN";
+  // Language buttons
+  function setLanguage(lang) {
+    currentLang = lang;
     document.documentElement.lang = currentLang;
+    langEnBtn.classList.toggle("active", lang === "en");
+    langFiBtn.classList.toggle("active", lang === "fi");
     applyLanguage();
-  });
+  }
+
+  langEnBtn.addEventListener("click", () => setLanguage("en"));
+  langFiBtn.addEventListener("click", () => setLanguage("fi"));
 
   function applyLanguage() {
     // Toggle data-lang-en / data-lang-fi spans
