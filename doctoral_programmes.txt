@@ -1,0 +1,19 @@
+University of Helsinki - Doctoral Programmes / Helsingin yliopisto - Tohtoriohjelmat
+=====================================================================================
+
+ #  | English                                                                          | Finnish (Suomeksi)
+----|----------------------------------------------------------------------------------|------------------------------------------------------------
+ 1  | Doctoral Programme in Biomedicine                                                | Biolääketieteellinen tohtoriohjelma
+ 2  | Doctoral Programme in Clinical Research                                          | Kliininen tohtoriohjelma
+ 3  | Doctoral Programme in Drug Research                                              | Lääketutkimuksen tohtoriohjelma
+ 4  | Doctoral Programme in Ecology, Evolution and Environmental Sustainability in Society | Ekologian, evoluution ja yhteiskunnan ympäristökestävyyden tohtoriohjelma
+ 5  | Doctoral Programme in Education, Schooling and Learning                          | Kasvatuksen, koulutuksen ja oppimisen tohtoriohjelma
+ 6  | Doctoral Programme in the Humanities                                             | Humanististen tieteiden tohtoriohjelma
+ 7  | Doctoral Programme in Law                                                        | Oikeustieteen tohtoriohjelma
+ 8  | Doctoral Programme in Molecular and Cellular Systems of Life                     | Elämän molekyyli- ja solutason järjestelmien tohtoriohjelma
+ 9  | Doctoral Programme in Multidisciplinary Research in Renewable Natural Resources   | Uusiutuvien luonnonvarojen monitieteinen tohtoriohjelma
+10  | Doctoral Programme in One Health                                                 | Yhteisen terveyden tohtoriohjelma
+11  | Doctoral Programme in Population Health and Human Behaviour                      | Väestön terveyden ja ihmisen käyttäytymisen tohtoriohjelma
+12  | Doctoral Programme in Science                                                    | Matemaattis-luonnontieteellinen tohtoriohjelma
+13  | Doctoral Programme in Social Sciences                                            | Yhteiskuntatieteiden tohtoriohjelma
+14  | Doctoral Programme in Theology and Religious Studies                             | Teologian ja uskonnontutkimuksen tohtoriohjelma

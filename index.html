@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctoral Degree Supervisor Agreement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <span data-lang-en>SUPERVISOR AGREEMENT</span>
+        <span data-lang-fi hidden>OHJAAJASOPIMUS</span>
+      </h1>
+      <p class="subtitle">
+        <span data-lang-en>
+          APPROVAL - Appendix to the application for the right to pursue a doctoral degree
+        </span>
+        <span data-lang-fi hidden>
+          HYVÄKSYNTÄ - Liite tohtorintutkinnon suoritusoikeushakemukseen
+        </span>
+      </p>
+      <button id="lang-toggle" class="lang-btn" type="button">FI</button>
+    </header>
+
+    <p class="instruction-text">
+      <span data-lang-en>Signed and scanned document should be attached to the application for the right to pursue a doctoral degree in the Studyinfo/Opintopolku application portal by the application deadline.</span>
+      <span data-lang-fi hidden>Allekirjoitettu ja skannattu dokumentti tulee liittää tohtorintutkinnon suoritusoikeushakemukseen Opintopolku-hakuportaalissa hakuajan päättymiseen mennessä.</span>
+    </p>
+
+    <form id="agreement-form" onsubmit="return false;">
+      <!-- Name of the doctoral programme -->
+      <section class="form-section">
+        <div class="form-group">
+          <label for="doctoral-programme">
+            <span data-lang-en>Name of the doctoral programme</span>
+            <span data-lang-fi hidden>Tohtoriohjelman nimi</span>
+            <span class="required-star">*</span>
+          </label>
+          <select id="doctoral-programme" required>
+              <option value="" data-en="-- Select doctoral programme --" data-fi="-- Valitse tohtoriohjelma --">-- Select doctoral programme --</option>
+              <option value="biomedicine" data-en="Doctoral Programme in Biomedicine" data-fi="Biolääketieteellinen tohtoriohjelma">Doctoral Programme in Biomedicine</option>
+              <option value="clinical-research" data-en="Doctoral Programme in Clinical Research" data-fi="Kliininen tohtoriohjelma">Doctoral Programme in Clinical Research</option>
+              <option value="drug-research" data-en="Doctoral Programme in Drug Research" data-fi="Lääketutkimuksen tohtoriohjelma">Doctoral Programme in Drug Research</option>
+              <option value="ecology-evolution" data-en="Doctoral Programme in Ecology, Evolution and Environmental Sustainability in Society" data-fi="Ekologian, evoluution ja yhteiskunnan ympäristökestävyyden tohtoriohjelma">Doctoral Programme in Ecology, Evolution and Environmental Sustainability in Society</option>
+              <option value="education" data-en="Doctoral Programme in Education, Schooling and Learning" data-fi="Kasvatuksen, koulutuksen ja oppimisen tohtoriohjelma">Doctoral Programme in Education, Schooling and Learning</option>
+              <option value="humanities" data-en="Doctoral Programme in the Humanities" data-fi="Humanististen tieteiden tohtoriohjelma">Doctoral Programme in the Humanities</option>
+              <option value="law" data-en="Doctoral Programme in Law" data-fi="Oikeustieteen tohtoriohjelma">Doctoral Programme in Law</option>
+              <option value="molecular-cellular" data-en="Doctoral Programme in Molecular and Cellular Systems of Life" data-fi="Elämän molekyyli- ja solutason järjestelmien tohtoriohjelma">Doctoral Programme in Molecular and Cellular Systems of Life</option>
+              <option value="renewable-natural-resources" data-en="Doctoral Programme in Multidisciplinary Research in Renewable Natural Resources" data-fi="Uusiutuvien luonnonvarojen monitieteinen tohtoriohjelma">Doctoral Programme in Multidisciplinary Research in Renewable Natural Resources</option>
+              <option value="one-health" data-en="Doctoral Programme in One Health" data-fi="Yhteisen terveyden tohtoriohjelma">Doctoral Programme in One Health</option>
+              <option value="population-health" data-en="Doctoral Programme in Population Health and Human Behaviour" data-fi="Väestön terveyden ja ihmisen käyttäytymisen tohtoriohjelma">Doctoral Programme in Population Health and Human Behaviour</option>
+              <option value="science" data-en="Doctoral Programme in Science" data-fi="Matemaattis-luonnontieteellinen tohtoriohjelma">Doctoral Programme in Science</option>
+              <option value="social-sciences" data-en="Doctoral Programme in Social Sciences" data-fi="Yhteiskuntatieteiden tohtoriohjelma">Doctoral Programme in Social Sciences</option>
+              <option value="theology" data-en="Doctoral Programme in Theology and Religious Studies" data-fi="Teologian ja uskonnontutkimuksen tohtoriohjelma">Doctoral Programme in Theology and Religious Studies</option>
+            </select>
+        </div>
+      </section>
+
+      <!-- APPLICANT -->
+      <section class="form-section">
+        <h2>
+          <span data-lang-en>APPLICANT</span>
+          <span data-lang-fi hidden>HAKIJA</span>
+        </h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="applicant-surname">
+              <span data-lang-en>Surname/Last name</span>
+              <span data-lang-fi hidden>Sukunimi</span>
+              <span class="required-star">*</span>
+            </label>
+            <input type="text" id="applicant-surname" required data-placeholder-en="Surname/Last name" data-placeholder-fi="Sukunimi" placeholder="Surname/Last name">
+          </div>
+          <div class="form-group">
+            <label for="applicant-firstname">
+              <span data-lang-en>First name(s)</span>
+              <span data-lang-fi hidden>Etunimi/Etunimet</span>
+              <span class="required-star">*</span>
+            </label>
+            <input type="text" id="applicant-firstname" required data-placeholder-en="First name(s)" data-placeholder-fi="Etunimi/Etunimet" placeholder="First name(s)">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="applicant-dob">
+              <span data-lang-en>Date of birth (dd/mm/yyyy)</span>
+              <span data-lang-fi hidden>Syntymäaika (pp/kk/vvvv)</span>
+              <span class="required-star">*</span>
+            </label>
+            <input type="date" id="applicant-dob" required>
+          </div>
+          <div class="form-group">
+            <label for="applicant-email">
+              <span data-lang-en>Email address</span>
+              <span data-lang-fi hidden>Sähköpostiosoite</span>
+            </label>
+            <input type="email" id="applicant-email" data-placeholder-en="Email address" data-placeholder-fi="Sähköpostiosoite" placeholder="Email address">
+          </div>
+        </div>
+      </section>
+
+      <!-- SUPERVISORS -->
+      <section class="form-section">
+        <h2>
+          <span data-lang-en>SUPERVISORS</span>
+          <span data-lang-fi hidden>OHJAAJAT</span>
+        </h2>
+
+        <p class="section-description">
+          <span data-lang-en>I commit to work as the above mentioned applicant's supervisor as well as confirm that I am familiar with their application and its appendices.</span>
+          <span data-lang-fi hidden>Sitoudun toimimaan edellä mainitun hakijan ohjaajana ja vahvistan, että tunnen hänen hakemuksensa ja sen liitteet.</span>
+        </p>
+
+        <!-- Main supervisor -->
+        <div class="supervisor-block" data-supervisor="1">
+          <h3>
+            <span data-lang-en>Main supervisor</span>
+            <span data-lang-fi hidden>Pääohjaaja</span>
+          </h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>
+                <span data-lang-en>Surname/Last name</span>
+                <span data-lang-fi hidden>Sukunimi</span>
+                <span class="required-star">*</span>
+              </label>
+              <input type="text" class="sup-surname" required data-placeholder-en="Surname/Last name" data-placeholder-fi="Sukunimi" placeholder="Surname/Last name">
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang-en>First name(s)</span>
+                <span data-lang-fi hidden>Etunimi/Etunimet</span>
+                <span class="required-star">*</span>
+              </label>
+              <input type="text" class="sup-firstname" required data-placeholder-en="First name(s)" data-placeholder-fi="Etunimi/Etunimet" placeholder="First name(s)">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang-en>Academic degree title (PhD/Prof./Assoc prof./Docent)</span>
+              <span data-lang-fi hidden>Akateeminen arvo (FT/Prof./Apul. prof./Dosentti)</span>
+              <span class="required-star">*</span>
+            </label>
+            <select class="sup-title" required>
+              <option value="" data-en="-- Select title --" data-fi="-- Valitse arvo --">-- Select title --</option>
+              <option value="phd" data-en="PhD" data-fi="FT">PhD</option>
+              <option value="prof" data-en="Prof." data-fi="Prof.">Prof.</option>
+              <option value="assoc-prof" data-en="Assoc prof." data-fi="Apul. prof.">Assoc prof.</option>
+              <option value="docent" data-en="Docent" data-fi="Dosentti">Docent</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>
+                <span data-lang-en>Date (dd/mm/yyyy)</span>
+                <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+              </label>
+              <input type="date" class="sup-date">
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang-en>Signature</span>
+                <span data-lang-fi hidden>Allekirjoitus</span>
+              </label>
+              <div class="signature-line"></div>
+            </div>
+          </div>
+
+          <div id="funding-block" hidden>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="employment-confirm">
+                <span data-lang-en>I confirm that I have employment or scholarship of minimum of 3 yrs with University of Helsinki.</span>
+                <span data-lang-fi hidden>Vahvistan, että minulla on vähintään 3 vuoden työsuhde tai apuraha Helsingin yliopistossa.</span>
+              </label>
+            </div>
+
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="funding-confirm">
+                <span data-lang-en>In this doctoral programme, the funding for the first year has to be secured in the application stage. I confirm that this applicant has funding secured for at least 1 year from starting of the study right. State the funding sources (or student's self-funding) below.</span>
+                <span data-lang-fi hidden>Tässä tohtoriohjelmassa ensimmäisen vuoden rahoituksen tulee olla varmistettu hakuvaiheessa. Vahvistan, että tällä hakijalla on rahoitus vähintään 1 vuodeksi opiskeluoikeuden alkamisesta. Ilmoita rahoituslähteet (tai opiskelijan omarahoitus) alla.</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <span data-lang-en>Funding sources/other funding</span>
+                <span data-lang-fi hidden>Rahoituslähteet/muu rahoitus</span>
+              </label>
+              <textarea id="funding-sources" rows="3" data-placeholder-en="Funding sources/other funding" data-placeholder-fi="Rahoituslähteet/muu rahoitus" placeholder="Funding sources/other funding"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supervisor 2 -->
+        <div class="supervisor-block" data-supervisor="2">
+          <div class="checkbox-group">
+            <label class="checkbox-label supervisor-toggle">
+              <input type="checkbox" id="enable-supervisor2">
+              <h3>
+                <span data-lang-en>Supervisor 2</span>
+                <span data-lang-fi hidden>Ohjaaja 2</span>
+              </h3>
+            </label>
+          </div>
+          <div class="supervisor-fields" id="supervisor2-fields" hidden>
+            <div class="form-row">
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>Surname/Last name</span>
+                  <span data-lang-fi hidden>Sukunimi</span>
+                  <span class="required-star">*</span>
+                </label>
+                <input type="text" class="sup-surname" data-placeholder-en="Surname/Last name" data-placeholder-fi="Sukunimi" placeholder="Surname/Last name">
+              </div>
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>First name(s)</span>
+                  <span data-lang-fi hidden>Etunimi/Etunimet</span>
+                  <span class="required-star">*</span>
+                </label>
+                <input type="text" class="sup-firstname" data-placeholder-en="First name(s)" data-placeholder-fi="Etunimi/Etunimet" placeholder="First name(s)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang-en>Academic degree title (PhD/Prof./Assoc prof./Docent)</span>
+                <span data-lang-fi hidden>Akateeminen arvo (FT/Prof./Apul. prof./Dosentti)</span>
+                <span class="required-star">*</span>
+              </label>
+              <select class="sup-title">
+                <option value="" data-en="-- Select title --" data-fi="-- Valitse arvo --">-- Select title --</option>
+                <option value="phd" data-en="PhD" data-fi="FT">PhD</option>
+                <option value="prof" data-en="Prof." data-fi="Prof.">Prof.</option>
+                <option value="assoc-prof" data-en="Assoc prof." data-fi="Apul. prof.">Assoc prof.</option>
+                <option value="docent" data-en="Docent" data-fi="Dosentti">Docent</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>Date (dd/mm/yyyy)</span>
+                  <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+                </label>
+                <input type="date" class="sup-date">
+              </div>
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>Signature</span>
+                  <span data-lang-fi hidden>Allekirjoitus</span>
+                </label>
+                <div class="signature-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supervisor 3 -->
+        <div class="supervisor-block" data-supervisor="3">
+          <div class="checkbox-group">
+            <label class="checkbox-label supervisor-toggle">
+              <input type="checkbox" id="enable-supervisor3">
+              <h3>
+                <span data-lang-en>Supervisor 3</span>
+                <span data-lang-fi hidden>Ohjaaja 3</span>
+              </h3>
+            </label>
+          </div>
+          <div class="supervisor-fields" id="supervisor3-fields" hidden>
+            <div class="form-row">
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>Surname/Last name</span>
+                  <span data-lang-fi hidden>Sukunimi</span>
+                  <span class="required-star">*</span>
+                </label>
+                <input type="text" class="sup-surname" data-placeholder-en="Surname/Last name" data-placeholder-fi="Sukunimi" placeholder="Surname/Last name">
+              </div>
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>First name(s)</span>
+                  <span data-lang-fi hidden>Etunimi/Etunimet</span>
+                  <span class="required-star">*</span>
+                </label>
+                <input type="text" class="sup-firstname" data-placeholder-en="First name(s)" data-placeholder-fi="Etunimi/Etunimet" placeholder="First name(s)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang-en>Academic degree title (PhD/Prof./Assoc prof./Docent)</span>
+                <span data-lang-fi hidden>Akateeminen arvo (FT/Prof./Apul. prof./Dosentti)</span>
+                <span class="required-star">*</span>
+              </label>
+              <select class="sup-title">
+                <option value="" data-en="-- Select title --" data-fi="-- Valitse arvo --">-- Select title --</option>
+                <option value="phd" data-en="PhD" data-fi="FT">PhD</option>
+                <option value="prof" data-en="Prof." data-fi="Prof.">Prof.</option>
+                <option value="assoc-prof" data-en="Assoc prof." data-fi="Apul. prof.">Assoc prof.</option>
+                <option value="docent" data-en="Docent" data-fi="Dosentti">Docent</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>Date (dd/mm/yyyy)</span>
+                  <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+                </label>
+                <input type="date" class="sup-date">
+              </div>
+              <div class="form-group">
+                <label>
+                  <span data-lang-en>Signature</span>
+                  <span data-lang-fi hidden>Allekirjoitus</span>
+                </label>
+                <div class="signature-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COORDINATING ACADEMIC -->
+      <section class="form-section page-break-before">
+        <h2>
+          <span data-lang-en>COORDINATING ACADEMIC</span>
+          <span data-lang-fi hidden>VASTUUHENKILÖ</span>
+        </h2>
+
+        <p class="section-description">
+          <span data-lang-en>I confirm that I am familiar with the applicant's application and its appendices.</span>
+          <span data-lang-fi hidden>Vahvistan, että tunnen hakijan hakemuksen ja sen liitteet.</span>
+        </p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="coord-surname">
+              <span data-lang-en>Surname/Last name</span>
+              <span data-lang-fi hidden>Sukunimi</span>
+            </label>
+            <input type="text" id="coord-surname" data-placeholder-en="Surname/Last name" data-placeholder-fi="Sukunimi" placeholder="Surname/Last name">
+          </div>
+          <div class="form-group">
+            <label for="coord-firstname">
+              <span data-lang-en>First name(s)</span>
+              <span data-lang-fi hidden>Etunimi/Etunimet</span>
+            </label>
+            <input type="text" id="coord-firstname" data-placeholder-en="First name(s)" data-placeholder-fi="Etunimi/Etunimet" placeholder="First name(s)">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="coord-title">
+            <span data-lang-en>Academic degree title (Prof./Assoc prof./Docent)</span>
+            <span data-lang-fi hidden>Akateeminen arvo (Prof./Apul. prof./Dosentti)</span>
+          </label>
+          <select id="coord-title">
+            <option value="" data-en="-- Select title --" data-fi="-- Valitse arvo --">-- Select title --</option>
+            <option value="prof" data-en="Prof." data-fi="Prof.">Prof.</option>
+            <option value="assoc-prof" data-en="Assoc prof." data-fi="Apul. prof.">Assoc prof.</option>
+            <option value="docent" data-en="Docent" data-fi="Dosentti">Docent</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="coord-date">
+              <span data-lang-en>Date (dd/mm/yyyy)</span>
+              <span data-lang-fi hidden>Päivämäärä (pp/kk/vvvv)</span>
+            </label>
+            <input type="date" id="coord-date">
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang-en>Signature</span>
+              <span data-lang-fi hidden>Allekirjoitus</span>
+            </label>
+            <div class="signature-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Actions -->
+      <section class="form-actions no-print">
+        <button type="button" id="print-btn" class="btn btn-primary">
+          <span data-lang-en>Print / Save as PDF</span>
+          <span data-lang-fi hidden>Tulosta / Tallenna PDF</span>
+        </button>
+      </section>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
